@@ -22,7 +22,8 @@ namespace ApiPetshopProgreso2.Migrations
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Apellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Contrasena = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -47,11 +48,11 @@ namespace ApiPetshopProgreso2.Migrations
 
             migrationBuilder.InsertData(
                 table: "clientes",
-                columns: new[] { "Id", "Apellido", "Cedula", "Email", "Nombre", "Telefono" },
+                columns: new[] { "Id", "Apellido", "Cedula", "Contrasena", "Email", "Nombre", "Telefono" },
                 values: new object[,]
                 {
-                    { 1, "Merizalde", "1720380052", "e@gmail.com", "Enrique", "0997357707" },
-                    { 2, "Perez", "1720380053", "j@gmail.com", "Jose", "0997352658" }
+                    { 1, "Merizalde", "1720380052", "123456789", "e@gmail.com", "Enrique", "0997357707" },
+                    { 2, "Perez", "1720380053", "123456789", "j@gmail.com", "Jose", "0997352658" }
                 });
 
             migrationBuilder.InsertData(

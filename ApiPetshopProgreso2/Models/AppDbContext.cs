@@ -42,7 +42,8 @@ namespace ApiPetshopProgreso2.Models
                     Nombre = "Enrique",
                     Apellido = "Merizalde",
                     Telefono = "0997357707",
-                    Email = "e@gmail.com"
+                    Email = "e@gmail.com",
+                    Contrasena = "123456789"
                 },
                 new Cliente()
                 {
@@ -51,7 +52,8 @@ namespace ApiPetshopProgreso2.Models
                     Nombre = "Jose",
                     Apellido = "Perez",
                     Telefono = "0997352658",
-                    Email = "j@gmail.com"
+                    Email = "j@gmail.com",
+                    Contrasena = "123456789"
                 }
                 );
         }

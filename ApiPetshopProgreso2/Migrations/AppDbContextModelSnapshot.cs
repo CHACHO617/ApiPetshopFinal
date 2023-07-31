@@ -37,6 +37,10 @@ namespace ApiPetshopProgreso2.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Contrasena")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -59,6 +63,7 @@ namespace ApiPetshopProgreso2.Migrations
                             Id = 1,
                             Apellido = "Merizalde",
                             Cedula = "1720380052",
+                            Contrasena = "123456789",
                             Email = "e@gmail.com",
                             Nombre = "Enrique",
                             Telefono = "0997357707"
@@ -68,6 +73,7 @@ namespace ApiPetshopProgreso2.Migrations
                             Id = 2,
                             Apellido = "Perez",
                             Cedula = "1720380053",
+                            Contrasena = "123456789",
                             Email = "j@gmail.com",
                             Nombre = "Jose",
                             Telefono = "0997352658"

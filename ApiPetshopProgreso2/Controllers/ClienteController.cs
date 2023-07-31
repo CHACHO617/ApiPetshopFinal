@@ -89,6 +89,7 @@ namespace ApiPetshopProgreso2.Controllers
                 cliente1.Apellido = cliente.Apellido != null ? cliente.Apellido : cliente1.Apellido;
                 cliente1.Telefono = cliente.Telefono != null ? cliente.Telefono : cliente1.Telefono;
                 cliente1.Email = cliente.Email != null ? cliente.Email : cliente1.Email;
+                cliente1.Contrasena = cliente.Contrasena != null ? cliente.Contrasena : cliente1.Contrasena;
                 _db.Update(cliente1);
                 await _db.SaveChangesAsync();
                 _resultadoApi.httpResponseCode = HttpStatusCode.OK.ToString();
